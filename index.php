@@ -34,7 +34,11 @@
              repellat saepe omnis, adipisci doloribus porro alias animi, cum blanditiis.</p></div>
         </div>
     </div>
-    <div class="paralax"></div>
+    <div class="paralax">
+        <img src="assets/images/newyork.jpg" id="bg">
+        <!-- <img src="assets/images/doctorstrange.png" id="strange"> -->
+        <img src="assets/images/spiderpara.png" id="spider">
+    </div>
     <div class="container2">
         
         <div class="souscontainer2">
@@ -52,13 +56,13 @@
         </div>
     </div>
     <footer>
-    <div class="copy"><h5>&copy; Copyright Metropolis</h5></div>
+    <div class="copy"><h4>&copy; Copyright Metropolis</h4></div>
             <div class="link">
-                
                 <div class="icone"><img src="assets/images/svg/twitter.svg"></div>
                 <div class="icone"><img src="assets/images/svg/facebook.svg"></div>
                 <div class="icone"><img src="assets/images/svg/instagram.svg"></div>
             </div>
     </footer>
+    <script src="assets/js/paralax.js"></script>
 </body>
 </html>
