@@ -11,8 +11,8 @@
 <body>
     <header>
         <div class="box_button">
-            <div class="signup">sign up</div>
-            <div class="signin">sign in</div>
+            <div class="signup"><a href="assets/php/signup.php">sign up</a></div>
+            <div class="signin"><a href="assets/php/signin.php">sign in</a></div>
         </div>
     </header>
     <div class="imagep">
@@ -58,9 +58,9 @@
     <footer>
     <div class="copy"><h4>&copy; Copyright Metropolis</h4></div>
             <div class="link">
-                <div class="icone"><img src="assets/images/svg/twitter.svg"></div>
-                <div class="icone"><img src="assets/images/svg/facebook.svg"></div>
-                <div class="icone"><img src="assets/images/svg/instagram.svg"></div>
+                <div class="icone"><img src="assets/images/svg/twitter.svg" a href="#"></div>
+                <div class="icone"><img src="assets/images/svg/facebook.svg" a href="#"></div>
+                <div class="icone"><img src="assets/images/svg/instagram.svg" a href="#"></div>
             </div>
     </footer>
     <script src="assets/js/paralax.js"></script>
