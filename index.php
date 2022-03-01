@@ -30,8 +30,7 @@
             <div class="texte1"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo et iusto provident ea ratione ab eligendi minus aliquid ipsa alias, voluptatum ducimus facilis at repudiandae tempora. Maiores praesentium labore quam!
             Quo id, qui, amet assumenda animi omnis modi nesciunt vel, excepturi illum sit at neque deleniti possimus dolorum hic ab blanditiis suscipit. Accusamus, eos praesentium. Voluptatem ullam dolore adipisci ut.
             Iure saepe dolore cupiditate iste dolorem similique, error, deleniti libero nulla maxime aliquam, quos atque eum tempora amet voluptates expedita quis eaque assumenda. Nemo, facere reprehenderit laudantium cupiditate ipsa veritatis.
-            Possimus laborum hic quia beatae corrupti! Velit illo delectus, debitis autem perspiciatis perferendis ea sapiente incidunt accusamus quisquam doloremque eaque in dignissimos voluptate necessitatibus ratione ipsam nostrum vitae eligendi? Modi?
-             repellat saepe omnis, adipisci doloribus porro alias animi, cum blanditiis.</p></div>
+            Possimus laborum hic quia beatae corrupti! Velit illo delectus</p></div>
         </div>
     </div>
     <div class="paralax">
@@ -50,8 +49,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo et iusto provident ea ratione ab eligendi minus aliquid ipsa alias, voluptatum ducimus facilis at repudiandae tempora. Maiores praesentium labore quam!
             Quo id, qui, amet assumenda animi omnis modi nesciunt vel, excepturi illum sit at neque deleniti possimus dolorum hic ab blanditiis suscipit. Accusamus, eos praesentium. Voluptatem ullam dolore adipisci ut.
             Iure saepe dolore cupiditate iste dolorem similique, error, deleniti libero nulla maxime aliquam, quos atque eum tempora amet voluptates expedita quis eaque assumenda. Nemo, facere reprehenderit laudantium cupiditate ipsa veritatis.
-            Possimus laborum hic quia beatae corrupti! Velit illo delectus, debitis autem perspiciatis perferendis ea sapiente incidunt accusamus quisquam doloremque eaque in dignissimos voluptate necessitatibus ratione ipsam nostrum vitae eligendi? Modi?
-             repellat saepe omnis, adipisci doloribus porro alias animi, cum blanditiis.</p>
+            Possimus laborum hic quia beatae corrupti! Velit illo delectus</p>
             </div>
         </div>
     </div>
