@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/include.css">
     <script src="https://kit.fontawesome.com/aa36982253.js" crossorigin="anonymous"></script>
     <title>Accueil</title>
 </head>
@@ -53,14 +54,7 @@
             </div>
         </div>
     </div>
-    <footer>
-    <div class="copy"><h4>&copy; Copyright Metropolis</h4></div>
-            <div class="link">
-                <div class="icone"><img src="assets/images/svg/twitter.svg" a href="#"></div>
-                <div class="icone"><img src="assets/images/svg/facebook.svg" a href="#"></div>
-                <div class="icone"><img src="assets/images/svg/instagram.svg" a href="#"></div>
-            </div>
-    </footer>
+    <?php   include("assets/include/footer.php"); ?>
     <script src="assets/js/paralax.js"></script>
 </body>
 </html>
