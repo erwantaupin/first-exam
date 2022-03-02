@@ -68,6 +68,7 @@ body {
   border: none;
   background: none;
   font-family: "texte";
+  cursor: pointer;
 }
 h6 {
   margin-top: -25px;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/include.css">
     <script src="https://kit.fontawesome.com/aa36982253.js" crossorigin="anonymous"></script>
-    <title>Accueil</title>
+    <title>Presentation</title>
 </head>
 <body>
     <header>
