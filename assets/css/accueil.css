@@ -73,7 +73,7 @@ nav {
   background: linear-gradient(
     to top,
     rgba(182, 177, 172, 0.479) 69%,
-    #cf151200 31%
+    transparent 31%
   );
   border-radius: 0px 0px 15px 15px;
   z-index: 200;
