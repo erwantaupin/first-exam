@@ -111,6 +111,7 @@ header {
   background-position: center;
 }
 .texte1 {
+  clear: both;
   width: 50vw;
   height: 60vh;
   margin-left: 50px;

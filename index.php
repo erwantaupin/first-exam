@@ -30,8 +30,7 @@
             <div class="image1"></div>
             <div class="texte1"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo et iusto provident ea ratione ab eligendi minus aliquid ipsa alias, voluptatum ducimus facilis at repudiandae tempora. Maiores praesentium labore quam!
             Quo id, qui, amet assumenda animi omnis modi nesciunt vel, excepturi illum sit at neque deleniti possimus dolorum hic ab blanditiis suscipit. Accusamus, eos praesentium. Voluptatem ullam dolore adipisci ut.
-            Iure saepe dolore cupiditate iste dolorem similique, error, deleniti libero nulla maxime aliquam, quos atque eum tempora amet voluptates expedita quis eaque assumenda. Nemo, facere reprehenderit laudantium cupiditate ipsa veritatis.
-            Possimus laborum hic quia beatae corrupti! Velit illo delectus</p></div>
+            Iure saepe dolore cupiditate iste dolorem similique, error.</p></div>
         </div>
     </div>
     <div class="paralax">
@@ -49,8 +48,7 @@
                 </div>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo et iusto provident ea ratione ab eligendi minus aliquid ipsa alias, voluptatum ducimus facilis at repudiandae tempora. Maiores praesentium labore quam!
             Quo id, qui, amet assumenda animi omnis modi nesciunt vel, excepturi illum sit at neque deleniti possimus dolorum hic ab blanditiis suscipit. Accusamus, eos praesentium. Voluptatem ullam dolore adipisci ut.
-            Iure saepe dolore cupiditate iste dolorem similique, error, deleniti libero nulla maxime aliquam, quos atque eum tempora amet voluptates expedita quis eaque assumenda. Nemo, facere reprehenderit laudantium cupiditate ipsa veritatis.
-            Possimus laborum hic quia beatae corrupti! Velit illo delectus</p>
+            Iure saepe dolore cupiditate iste dolorem similique, error.</p>
             </div>
         </div>
     </div>
