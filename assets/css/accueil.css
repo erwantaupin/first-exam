@@ -144,7 +144,7 @@ a {
 }
 #carousel {
   position: relative;
-  height: 280px;
+  height: 46vh;
   overflow: hidden;
 }
 #carousel div {
