@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/accueil.css">
-        <link rel="stylesheet" href="assets/css/include.css">
+        <link rel="stylesheet" href="assets/css/includeheader.css">
+        <link rel="stylesheet" href="assets/css/includefooter.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/aa36982253.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
@@ -19,19 +20,20 @@
             <div class="carrousel">
                 <div id="carousel">
                     <div class="hideLeft">
-                        <img src="assets/images/le_hobbit.jpg"></div>
+                        <a href="#modal1"><img id="chobbit" src="assets/images/le_hobbit.jpg"></a>
+                    </div>
                     <div class="prevLeftSecond">
-                        <img src="assets/images/evade.jpg"></div>
+                        <a href="#modal2"><img id="cevade" src="assets/images/evade.jpg"></a></div>
                     <div class="prev">
-                        <img src="assets/images/dernierpub.jpg"></div>
+                        <a href="#modal3"><img id="cpub" src="assets/images/dernierpub.jpg"></a></div>
                     <div class="selected">
-                        <img src="assets/images/spider-manle3.jpg"></div>
+                        <a href="#modal"><img id="cspider" src="assets/images/spider-manle3.jpg"></a></div>
                     <div class="next">
-                        <img src="assets/images/startrekbeyond.jpg"></div>
+                        <a href="#modal"><img id="cstar" src="assets/images/startrekbeyond.jpg"></a></div>
                     <div class="nextRightSecond">
-                        <img src="assets/images/the_conjuring.jpg"></div>
+                        <a href="#modal"><img id="cconj" src="assets/images/the_conjuring.jpg"></a></div>
                     <div class="hideRight">
-                        <img src="assets/images/iron-man_2.jpg"></div>
+                        <a href="#modal"><img id="ciron" src="assets/images/iron-man_2.jpg"></a></div>
                 </div>
                 <div class="buttons">
                     <button id="prev">Precedent</button>

@@ -14,131 +14,17 @@
 body {
   background-color: #1f3253;
 }
-/* header */
-header {
-  position: absolute;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  height: 98px;
-  background-color: rgba(182, 177, 172, 0.479);
-  backdrop-filter: blur(4px);
-  z-index: 7;
-}
 
-.logo {
-  width: 70px;
-  height: 70px;
-  background-image: url("../images/lemsf.png");
-  background-size: cover;
-}
-nav {
-  display: flex;
-  flex-direction: row;
-  margin-left: 35%;
-}
-.barrep {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  line-height: 30px;
-  font-family: "texte";
-  z-index: 10;
-}
-.sous-menu {
-  display: flex;
-  flex-direction: column;
-  height: 325px;
-  z-index: 20;
-  margin-top: 300px;
-  line-height: 35px;
-  font-family: "texte";
-}
-.ulssmenu {
-  display: flex;
-  height: 1900px;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: -1900px;
-}
-.ulssmenu:hover,
-.ulssmenu:active {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: -80px;
-  background: linear-gradient(
-    to top,
-    rgba(182, 177, 172, 0.479) 69%,
-    transparent 31%
-  );
-  border-radius: 0px 0px 15px 15px;
-  z-index: 200;
-}
-.first {
-  display: flex;
-  margin-left: -10%;
-}
-p {
-  margin-top: 20px;
-}
-.boutonloupe {
-  margin-top: 20px;
-  margin-left: 15px;
-  width: 50px;
-  height: 50px;
-}
-#loupe {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 24px;
-}
-.recherche {
-  height: 24px;
-  border-radius: 15px;
-  text-align: center;
-}
-#chevronbas {
-  width: 20px;
-}
-li {
-  margin-right: 20px;
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: #ee171f;
-}
-.pad-ss h4 {
-  margin-left: 10px;
-}
-#deco {
-  text-decoration: none;
-  color: #ee171f;
-  width: 150px;
-  height: 50px;
-  font-size: 18px;
-  border: none;
-  background: none;
-  font-family: "texte";
-  cursor: pointer;
-}
 /* carrousel */
 .box-carrousel {
   height: 100vh;
   width: 100%;
-  background-image: url(../images/netf.jpg);
-
+  background: url(../images/netf.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .carrousel {
-  padding-top: 280px;
+  padding-top: 200px;
   position: relative;
   z-index: 2;
 }
@@ -212,6 +98,35 @@ a {
 #carousel div.nextRightSecond img {
   width: 200px;
 }
+#des1 {
+  opacity: 0;
+  margin: 10%;
+  text-align: center;
+}
+#chobbit:hover {
+  opacity: 0.5;
+}
+#des1:hover {
+  opacity: 1;
+}
+#ciron:hover {
+  opacity: 0.5;
+}
+#cevade:hover {
+  opacity: 0.5;
+}
+#cspider:hover {
+  opacity: 0.5;
+}
+#cconj:hover {
+  opacity: 0.5;
+}
+#cstar:hover {
+  opacity: 0.5;
+}
+#cpub:hover {
+  opacity: 0.5;
+}
 /* button carrousel principale */
 .buttons {
   position: relative;
@@ -223,13 +138,14 @@ a {
   position: relative;
   z-index: 30;
   text-decoration: none;
-  color: #ee171f;
+  color: #b81015;
   width: 150px;
   height: 50px;
   font-size: 18px;
   border: none;
   background: none;
   font-family: "texte";
+  font-weight: bold;
   cursor: pointer;
 }
 /* deuxieme partie des sliders */
@@ -250,13 +166,13 @@ a {
   text-align: center;
   font-family: "titre";
   font-size: 26px;
-  color: #ee171f;
+  color: #b81015;
 }
 .sous-titre {
   text-decoration: underline;
   font-family: "titre";
   font-size: 22px;
-  color: #ee171f;
+  color: #b81015;
 }
 .sliders {
   /* position: relative; */
@@ -306,7 +222,7 @@ a {
 }
 .priv_arrow {
   margin-left: 10px;
-  color: #ee171f;
+  color: #b81015;
   font-size: 40px;
 }
 .priv_arrow:hover {
@@ -315,7 +231,7 @@ a {
 .next_arrow {
   margin-right: 10px;
   font-size: 40px;
-  color: #ee171f;
+  color: #b81015;
 }
 .next_arrow:hover {
   color: rgb(31, 29, 29);

@@ -1,18 +1,20 @@
 <header>
-        <div class="logo"></div>
-        <nav>
+        <div class="box-logo">
+            <div class="logo"></div>
+        </div>
+        <nav>    
             <ul class="barrep">
-                <li><a href=""><h5>Accueil</h5></a></li>
-                <li><a href=""><h5>Favoris</h5></a></li>
-                <li><a href=""><h5>Genre</h5></a>
+                <li><a href=""><h4>Accueil</h4></a></li>
+                <li><a href=""><h4>Favoris</h4></a></li>
+                <li><a href=""><h4>Genre</h4></a>
                    <li class="sous-menu"><img id="chevronbas" src="assets/images/svg/chevronbas.svg">
                             <ul class="ulssmenu">
-                                <li><a class="pad-ss" href=""><h4>Action</h4></a></li>
-                                <li><a class="pad-ss" href=""><h4>Aventure</h4></a></li>
-                                <li><a class="pad-ss" href=""><h4>Science Fiction</h4></a></li>
-                                <li><a class="pad-ss" href=""><h4>Humour</h4></a></li>
-                                <li><a class="pad-ss" href=""><h4>Dessin animé</h4></a></li>
-                                <li><a class="pad-ss" href=""><h4>Horreur</h4></a></li>
+                                <li><a class="pad-ss" href=""><h5>Actions</h5></a></li>
+                                <li><a class="pad-ss" href=""><h5>Aventures</h5></a></li>
+                                <li><a class="pad-ss" href=""><h5>S . F</h5></a></li>
+                                <li><a class="pad-ss" href=""><h5>Humours</h5></a></li>
+                                <li><a class="pad-ss" href=""><h5>Animations</h5></a></li>
+                                <li><a class="pad-ss" href=""><h5>Horreurs</h5></a></li>
                             </ul>
                         </li>
                     </ul>

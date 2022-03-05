@@ -11,7 +11,7 @@
   padding: 0;
 }
 body {
-  background-color: #ee171f;
+  background-color: #b81016;
 }
 .box-log {
   display: flex;
@@ -58,7 +58,7 @@ body {
 .button a {
   text-decoration: none;
   font-family: "texte";
-  color: #ee171f;
+  color: #830004;
 }
 #subm {
   text-decoration: none;
