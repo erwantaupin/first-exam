@@ -115,35 +115,6 @@ body {
   width: 200px;
 }
 
-/* #des1 {
-  opacity: 0;
-  margin: 10%;
-  text-align: center;
-} */
-/* #chobbit:hover {
-  opacity: 0.5;
-}
-#des1:hover {
-  opacity: 1;
-}
-#ciron:hover {
-  opacity: 0.5;
-}
-#cevade:hover {
-  opacity: 0.5;
-}
-#cspider:hover {
-  opacity: 0.5;
-}
-#cconj:hover {
-  opacity: 0.5;
-}
-#cstar:hover {
-  opacity: 0.5;
-}
-#cpub:hover {
-  opacity: 0.5;
-} */
 /* button carrousel principale */
 .buttons {
   position: relative;
@@ -155,7 +126,7 @@ body {
   position: relative;
   z-index: 30;
   text-decoration: none;
-  color: #b81015;
+  color: #f71d24;
   width: 150px;
   height: 50px;
   font-size: 18px;
@@ -183,13 +154,13 @@ body {
   text-align: center;
   font-family: "titre";
   font-size: 26px;
-  color: #b81015;
+  color: #f71d24;
 }
 .sous-titre {
   text-decoration: underline;
   font-family: "titre";
   font-size: 22px;
-  color: #b81015;
+  color: #f71d24;
 }
 .sliders {
   /* position: relative; */
@@ -239,7 +210,7 @@ body {
 }
 .priv_arrow {
   margin-left: 10px;
-  color: #b81015;
+  color: #f71d24;
   font-size: 40px;
 }
 .priv_arrow:hover {
@@ -248,41 +219,8 @@ body {
 .next_arrow {
   margin-right: 10px;
   font-size: 40px;
-  color: #b81015;
+  color: #f71d24;
 }
 .next_arrow:hover {
   color: rgb(31, 29, 29);
 }
-/* HOVER DES SLIDERS */
-/* #a1:hover{}
-#a2:hover{}
-#a3:hover{}
-#a4:hover{}
-#a5:hover{}
-#a6:hover{}
-#a7:hover{}
-#a8:hover{}
-#h1:hover{}
-#h2:hover{}
-#h3:hover{}
-#h4:hover{}
-#h5:hover{}
-#h6:hover{}
-#h7:hover{}
-#h8:hover{}
-#c1:hover{}
-#c2:hover{}
-#c3:hover{}
-#c4:hover{}
-#c5:hover{}
-#c6:hover{}
-#c7:hover{}
-#c8:hover{}
-#s1:hover{}
-#s2:hover{}
-#s3:hover{}
-#s4:hover{}
-#s5:hover{}
-#s6:hover{}
-#s7:hover{}
-#s8:hover{} */
