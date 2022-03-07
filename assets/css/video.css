@@ -47,6 +47,10 @@ h2 {
   height: 90vh;
   color: #b81015;
 }
+.minititre {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
 .resume {
   display: flex;
   flex-direction: column;
@@ -54,12 +58,8 @@ h2 {
   width: 40%;
   height: 80vh;
 }
-/* .info {
-  width: 40vh;
-} */
-.minititre {
-  margin-bottom: 20px;
-  font-size: 22px;
+.box-info p {
+  color: antiquewhite;
 }
 .box-info h4 {
   font-family: "titre";

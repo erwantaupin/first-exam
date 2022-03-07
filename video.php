@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    if(isset($_SESSION['sess_user_id'])){          
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,3 +47,11 @@
 <?php   include("assets/include/footer.php"); ?>
 </body>
 </html>
+
+<?php 
+        }
+    else{
+        header("Location: assets/php/signup.php");
+    }
+
+?>

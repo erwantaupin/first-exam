@@ -12,11 +12,11 @@
         
     <div class="logge"><div class="titre-log"><h2>Login</h2></div>
             <form action="traitement.php" method="post" class="form-log">
-                <p><h3>Pseudo        : </h3><input class="input" type="text" name="pseudo" placeholder="votre pseudo" required/></p>
+                <p><h3>Pseudo        : </h3><input class="input" type="text" name="username" placeholder="votre pseudo" required/></p>
                 <p><h3>Mot de Passe  : </h3><input class="input" type="password" name="password" placeholder="votre password" required/></p>
                 <span></span>
                 <p><input type="checkbox" name="remember"/><H6>se souvenir de moi</H6></p>
-                <input type="submit" value="Connexion" id="subm"/>
+                <input type="submit" name="submitBtnLogin" value="Connexion" id="subm"/>
             </form>
             <div class="button"><a href="../../index.php"><H2>Retour</H2></a></div>
         </div>
