@@ -1,7 +1,7 @@
 <?php if(isset($_GET['id'])){
                 require("assets/php/accesfilm.php");
                     ?>    
-<aside id="modal?id=<?php echo $value["id_film"]?>" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="titre-modal1" style="display: none;">
+<aside id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="titre-modal1" style="display: none;">
                             <div class="modal-wrapper">
                                 <?php foreach ($execute as $value){ 
                                         if($value['id_film'] == $_GET['id'])?>

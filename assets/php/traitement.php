@@ -35,14 +35,4 @@ if(isset($_POST['submitBtnLogin'])) {
     $msg = "Both fields are required!";
   }
 }
-
-// if(isset($POST['btninscription'])){
-//   $username = trim($_POST['username']);
-//   $password = trim($_POST['password']);
-//   $mail = trim($_POST['mail'])
-//   // $role = trim($_POST['id_role']);
-//   if($username != "" && $password != "" && $mail != "") {
-    
-//   }
-// }
 ?>

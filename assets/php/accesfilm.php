@@ -10,8 +10,6 @@ $film = ("SELECT * FROM film
     ");
 
 $infofilm = $db->prepare($film);
-// $infofilm->bindParam('username', $username, PDO::PARAM_STR);
-// $infofilm->bindValue('password', $password, PDO::PARAM_STR);
 
 $infofilm->execute();
 

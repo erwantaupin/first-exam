@@ -56,7 +56,25 @@
                 <div class="slide responsive">
                     <?php foreach ($execute as $value){ ?>
                         <?php if ($value["id_genre"] == 1){ ?>
-                    <div class="body-slide" id="<?php echo $value["id_film"] ?>"><img src="<?php echo $value['image_film']?>"><a href="pagefilm.php?id=<?php echo $value["id_film"]?>" class="js-modal"><?php echo $value["titre_film"]?></a></div>
+                    <div class="body-slide" id="<?php echo $value["id_film"] ?>">
+                    <div class="card" style=" background: url(<?php echo $value['image_film']?>)">
+                        <a href="pagefilm.php?id=<?php echo $value["id_film"]?>" class="js-modal">
+                            <!-- <img id="sombre" src="<?php echo $value['image_film']?>"> -->
+                            <div class="textcache" id="info">
+                                <div class="minititre">
+                                    <h4>Info</h4>
+                                    <ul>
+                                        <li><p><?php echo $value["pegi_film"] ?></p></li>
+                                        <li><p><?php echo $value["date_film"] ?></p></li>
+                                        <li><p><?php echo $value["duree_film"] ?></p></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <?php echo $value["titre_film"]?>
+                        </a>
+                    </div>
+                    </div>
                     <!-- <div class="body-slide" id="a2"><img src="assets/images/le_hobbit.jpg"><a href="#modal9" class="js-modal">The Hobbit</a></div>
                     <div class="body-slide" id="a3"><img src="assets/images/madmax.jpg"><a href="#modal10" class="js-modal">Mad Max</a></div>
                     <div class="body-slide" id="a4"><img src="assets/images/equalizer.jpg"><a href="#modal11" class="js-modal">Equalizer</a></div>
@@ -73,14 +91,25 @@
                 <div class="slide responsive">
                 <?php foreach ($execute as $value){ ?>
                         <?php if ($value["id_genre"] == 2){ ?>
-                    <div class="body-slide" id="<?php echo $value["id_film"] ?>"><img src="<?php echo $value['image_film']?>"><a href="pagefilm.php?id=<?php echo $value["id_film"]?>" class="js-modal"><?php echo $value["titre_film"]?></a></div>
-                    <!-- <div class="body-slide" id="h2"><img src="assets/images/halloween.jpg"><a href="#modal17" class="js-modal">Halloween</a></div>
-                    <div class="body-slide" id="h3"><img src="assets/images/psycho.jpg"><a href="#modal18" class="js-modal">Psycho</a></div>
-                    <div class="body-slide" id="h4"><img src="assets/images/the_conjuring.jpg"><a href="#modal19" class="js-modal">The Conjuring</a></div>
-                    <div class="body-slide" id="h5"><img src="assets/images/gremlin.jpg"><a href="#modal20" class="js-modal">Gremlins</a></div>
-                    <div class="body-slide" id="h6"><img src="assets/images/it.jpg"><a href="#modal21" class="js-modal">ça</a></div>
-                    <div class="body-slide" id="h7"><img src="assets/images/insidious.jpg"><a href="#modal22" class="js-modal">Insidious</a></div>
-                    <div class="body-slide" id="h8"><img src="assets/images/purge.jpg"><a href="#modal23" class="js-modal">The Purge</a></div> -->
+                            <div class="body-slide" id="<?php echo $value["id_film"] ?>">
+                    <div class="card" style=" background: url(<?php echo $value['image_film']?>)">
+                        <a href="pagefilm.php?id=<?php echo $value["id_film"]?>" class="js-modal">
+                            <!-- <img id="sombre" src="<?php echo $value['image_film']?>"> -->
+                            <div class="textcache" id="info">
+                                <div class="minititre">
+                                    <h4>Info</h4>
+                                    <ul>
+                                        <li><p><?php echo $value["pegi_film"] ?></p></li>
+                                        <li><p><?php echo $value["date_film"] ?></p></li>
+                                        <li><p><?php echo $value["duree_film"] ?></p></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <?php echo $value["titre_film"]?>
+                        </a>
+                    </div>
+                    </div>
                 <?php } ?>
                 <?php } ?>
                 </div>
@@ -120,7 +149,6 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="assets/js/slick.min.js"></script>
         <script type="text/javascript" src="assets/js/slick.js"></script>
-        <script type="text/javascript" src="assets/js/modal.js"></script>
     </body>
 </html>
 
