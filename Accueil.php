@@ -63,10 +63,10 @@
                     <div class="body-slide" id="a5"><img src="assets/images/batman.jpg"><a href="#modal12" class="js-modal">Batman</a></div>
                     <div class="body-slide" id="a6"><img src="assets/images/iron-man_2.jpg"><a href="#modal13" class="js-modal">Iron Man 2</a></div>
                     <div class="body-slide" id="a7"><img src="assets/images/warcraft.jpg"><a href="#modal14" class="js-modal">Warcraft</a></div>
-                    <div class="body-slide" id="a8"><img src="assets/images/fury.jpg"><a href="#modal15" class="js-modal">Fury</a></div> -->
+                    <div class="body-slide" id="a8"><img src="assets/images/fury.jpg"><a href="#modal15" class="js-modal">Fury</a></div> -->   
                 <?php } ?>
                 <?php } ?>
-                </div>     
+                </div> 
             </div>
             <div class="sliders">
                 <div class="sous-titre"><h3>Horreur</h3></div>

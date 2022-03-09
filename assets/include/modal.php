@@ -1,6 +1,10 @@
-<?php foreach ($execute as $value){ ?>    
-<aside id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="titre-modal1" style="display: none;">
+<?php if(isset($_GET['id'])){
+                require("assets/php/accesfilm.php");
+                    ?>    
+<aside id="modal?id=<?php echo $value["id_film"]?>" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="titre-modal1" style="display: none;">
                             <div class="modal-wrapper">
+                                <?php foreach ($execute as $value){ 
+                                        if($value['id_film'] == $_GET['id'])?>
                                     <div class="titre-modal"><h3 id="titre-modal1"><?php echo $value["titre_film"]?></h3></div>
                                 <div class="box-synopsis-et-info-modal">
                                     <div class="synopsis-modal"><p><?php echo $value["synopsis_film"]?></p></div>
@@ -28,5 +32,6 @@
                                     <a href="" class="link-vers-film" id="link-modal-quitte"><h5>Retour</h5></a>
                                 </div>
                             </div>
+                            <?php } ?>
                         </aside>
                         <?php } ?>

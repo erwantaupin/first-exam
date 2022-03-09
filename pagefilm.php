@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/includeheader.css">
     <link rel="stylesheet" href="assets/css/includefooter.css">
     <link rel="stylesheet" href="assets/css/video.css">
-    <title>titredufilm</title>
+    <title>Movie</title>
 </head>
 <body>
 <?php   
