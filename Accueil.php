@@ -17,7 +17,6 @@
         <script src="https://kit.fontawesome.com/aa36982253.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
-        <link rel="stylesheet" href="assets/css/modal.css">
         <title>Accueil</title>
     </head>
 
@@ -75,13 +74,6 @@
                         </a>
                     </div>
                     </div>
-                    <!-- <div class="body-slide" id="a2"><img src="assets/images/le_hobbit.jpg"><a href="#modal9" class="js-modal">The Hobbit</a></div>
-                    <div class="body-slide" id="a3"><img src="assets/images/madmax.jpg"><a href="#modal10" class="js-modal">Mad Max</a></div>
-                    <div class="body-slide" id="a4"><img src="assets/images/equalizer.jpg"><a href="#modal11" class="js-modal">Equalizer</a></div>
-                    <div class="body-slide" id="a5"><img src="assets/images/batman.jpg"><a href="#modal12" class="js-modal">Batman</a></div>
-                    <div class="body-slide" id="a6"><img src="assets/images/iron-man_2.jpg"><a href="#modal13" class="js-modal">Iron Man 2</a></div>
-                    <div class="body-slide" id="a7"><img src="assets/images/warcraft.jpg"><a href="#modal14" class="js-modal">Warcraft</a></div>
-                    <div class="body-slide" id="a8"><img src="assets/images/fury.jpg"><a href="#modal15" class="js-modal">Fury</a></div> -->   
                 <?php } ?>
                 <?php } ?>
                 </div> 
