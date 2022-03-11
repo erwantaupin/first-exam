@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "titre";
+  src: url("../font/AkiraExpanded.otf");
+}
+@font-face {
+  font-family: "texte";
+  src: url("../font/LEMONMILK-Regular.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+.modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 340000;
+}
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 900px;
+  height: 400px;
+  max-width: calc(100vw - 20px);
+  max-height: calc(100vh - 20px);
+  padding: 20px;
+  background-color: #182640;
+  border-radius: 15px;
+  border: 1px solid #ffd700;
+  margin-top: 200px;
+}
+.titre-modal {
+  color: #b81015;
+  margin-bottom: 20px;
+}
+.box-synopsis-et-info-modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  /* border-radius: 10px;
+  border: 1px solid #ffd700; */
+}
+.synopsis-modal {
+  width: 50%;
+  height: 200px;
+  color: antiquewhite;
+}
+.box-petitinfo-modal {
+  width: 50%;
+  height: 200px;
+}
+.info-titre-modal {
+  color: #b81015;
+}
+.info-modal {
+  color: antiquewhite;
+}
+.box-petitinfo-modal li {
+  margin-left: 20px;
+}
+.production-modal {
+  color: antiquewhite;
+}
+.link-vers-film {
+}
+.link-vers-choix {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}

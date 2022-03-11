@@ -19,11 +19,11 @@
         <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
         <title>Accueil</title>
     </head>
-
     <body>
         <?php   include("assets/include/header.php"); ?>
         <div class="box-carrousel">
-            <div class="carrousel">
+            
+            <!-- <div class="carrousel">
                 <div id="carousel">
                     <div class="hideLeft">
                         <img id="chobbit" src="assets/images/le_hobbit.jpg"><a href="" class="js-modal">The Hobbit</a>
@@ -41,12 +41,11 @@
                     <div class="hideRight">
                         <img id="fury" src="assets/images/fury.jpg"><a href="" class="js-modal">Fury</a></div>
                 </div>
-                <?php   include("assets/include/modal.php"); ?>
                 <div class="buttons">
                     <button id="prev">Precedent</button>
                     <button id="next">Suivant</button>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="box-nos-films">
             <div class="titre"><h2>Nos Films</h2></div>
@@ -57,8 +56,7 @@
                         <?php if ($value["id_genre"] == 1){ ?>
                     <div class="body-slide" id="<?php echo $value["id_film"] ?>">
                     <div class="card" style=" background: url(<?php echo $value['image_film']?>)">
-                        <a href="pagefilm.php?id=<?php echo $value["id_film"]?>" class="js-modal">
-                            <!-- <img id="sombre" src="<?php echo $value['image_film']?>"> -->
+                        <a href="pagefilm.php?id=<?php echo $value["id_film"]?>" class="js-modal">                           
                             <div class="textcache" id="info">
                                 <div class="minititre">
                                     <h4>Info</h4>
@@ -86,7 +84,6 @@
                             <div class="body-slide" id="<?php echo $value["id_film"] ?>">
                     <div class="card" style=" background: url(<?php echo $value['image_film']?>)">
                         <a href="pagefilm.php?id=<?php echo $value["id_film"]?>" class="js-modal">
-                            <!-- <img id="sombre" src="<?php echo $value['image_film']?>"> -->
                             <div class="textcache" id="info">
                                 <div class="minititre">
                                     <h4>Info</h4>
@@ -105,8 +102,7 @@
                 <?php } ?>
                 <?php } ?>
                 </div>
-            </div>
-            
+            </div>           
             <div class="sliders">
                 <div class="sous-titre"><h3>Comedie</h3></div>
                 <div class="slide responsive">
@@ -141,9 +137,9 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="assets/js/slick.min.js"></script>
         <script type="text/javascript" src="assets/js/slick.js"></script>
+        <script type="text/javascript" src="assets/js/testcarrousel.js"></script>
     </body>
 </html>
-
 <?php 
         }
     else{
