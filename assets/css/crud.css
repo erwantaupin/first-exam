@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "titre";
+  src: url("../font/AkiraExpanded.otf");
+}
+@font-face {
+  font-family: "texte";
+  src: url("../font/LEMONMILK-Regular.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.boxtitre-crud {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #323232;
+}
+.titre-crud {
+  display: flex;
+  color: whitesmoke;
+  text-shadow: 1px 0 0 rgb(0, 60, 170), -1px 0 0 rgb(0, 60, 170),
+    0 1px 0 rgb(0, 60, 170), 0 -1px 0 rgb(0, 60, 170), 1px 1px rgb(0, 60, 170),
+    -1px -1px 0 rgb(0, 60, 170), 1px -1px 0 rgb(0, 60, 170),
+    -1px 1px 0 rgb(0, 60, 170);
+  font-family: "titre";
+}
+.titre-crud h2 {
+  font-size: 4em;
+}
+.btnleft {
+  height: 50vh;
+  position: relative;
+  z-index: 0;
+}
+.btnright {
+  height: 50vh;
+  position: relative;
+  z-index: 0;
+}
+/* .js-modal {
+  position: relative;
+  z-index: 1;
+} */
+/* #film-crud {
+  width: 80px;
+}
+#film-crud:hover {
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
+} */
+/* #user-crud {
+  width: 130px;
+} */
+/* #user-crud:hover {
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
+} */
+.box-modal-crud {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50vh;
+  background-color: #323232;
+}
+.box-btn {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.box-btn a {
+  font-family: "texte";
+}
+#submit {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 35px;
+  font-family: "texte";
+  font-size: larger;
+  font-weight: bold;
+  margin-right: 30px;
+}

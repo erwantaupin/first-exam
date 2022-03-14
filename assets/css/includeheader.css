@@ -1,0 +1,130 @@
+/* header */
+header {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 98px;
+  background-color: rgba(199, 192, 185, 0.479);
+  backdrop-filter: blur(4px);
+  z-index: 7;
+}
+.box-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 98px;
+  margin-left: 15px;
+}
+.logo {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  background-image: url("../images/lemsf.png");
+  background-size: cover;
+  /* margin-top: 280px; */
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  /* margin-left: 35%; */
+}
+.barrep {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 30px;
+  font-family: "texte";
+  z-index: 10;
+  margin-right: 12vw;
+}
+.sous-menu {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  height: 325px;
+  z-index: 20;
+  margin-top: 300px;
+  line-height: 35px;
+  font-family: "texte";
+}
+.ulssmenu {
+  display: flex;
+  height: 1900px;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -1900px;
+}
+.ulssmenu:hover,
+.ulssmenu:active {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -80px;
+  background: linear-gradient(
+    to top,
+    rgba(182, 177, 172, 0.479) 69%,
+    transparent 31%
+  );
+  /* backdrop-filter: blur(4px); */
+  border-radius: 0px 0px 15px 15px;
+  z-index: 200;
+}
+.first {
+  display: flex;
+  margin-left: -10%;
+}
+.first p {
+  margin-top: 20px;
+}
+.boutonloupe {
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 50px;
+  height: 50px;
+}
+#loupe {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 24px;
+}
+.recherche {
+  height: 24px;
+  border-radius: 15px;
+  text-align: center;
+}
+#chevronbas {
+  width: 20px;
+}
+li {
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ee171f;
+}
+.pad-ss h4 {
+  margin-left: 10px;
+}
+#deco {
+  text-decoration: none;
+  color: #ee171f;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  background: none;
+  font-family: "texte";
+  cursor: pointer;
+  margin-right: 5vw;
+}
+.ulssmenu h5 {
+  margin-left: 20px;
+}

@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "titre";
+  src: url("../font/AkiraExpanded.otf");
+}
+@font-face {
+  font-family: "texte";
+  src: url("../font/LEMONMILK-Regular.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #b81016;
+}
+.box-log {
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10vh 0 10vh 0;
+  background-image: url("../images/fdlog.jpg");
+  background-position: top;
+  background-size: cover;
+}
+.titre-log {
+  display: flex;
+  font-family: "titre";
+}
+.logge {
+  display: flex;
+  width: 315px;
+  height: 440px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(240, 248, 255, 0.342);
+  backdrop-filter: blur(2px);
+  border-radius: 30px;
+  line-height: 70px;
+}
+.form-log {
+  display: flex;
+  height: 70%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: "texte";
+  line-height: 45px;
+}
+.input {
+  height: 30px;
+  text-align: center;
+}
+.button a {
+  text-decoration: none;
+  font-family: "texte";
+  color: #830004;
+}
+#subm {
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  background: none;
+  font-family: "texte";
+  cursor: pointer;
+}
+h6 {
+  margin-top: -25px;
+}

@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "titre";
+  src: url("../font/AkiraExpanded.otf");
+}
+@font-face {
+  font-family: "texte";
+  src: url("../font/LEMONMILK-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to bottom, #182640 60%, #34558c 86%);
+}
+/* background et titre */
+#img_film {
+  width: 100%;
+  height: 100vh;
+  filter: brightness(50%) blur(1px);
+}
+#titre_film {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 400;
+  text-align: center;
+  color: #1f3253;
+  text-shadow: 1px 0 0 #ffd700, -1px 0 0 #ffd700, 0 1px 0 #ffd700,
+    0 -1px 0 #ffd700, 1px 1px #ffd700, -1px -1px 0 #ffd700, 1px -1px 0 #ffd700,
+    -1px 1px 0 #ffd700;
+}
+h2 {
+  font-size: 40px;
+  font-family: "titre";
+}
+/* info */
+.box-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 90vh;
+  color: #b81015;
+}
+.minititre {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 80vh;
+}
+.box-info p {
+  color: antiquewhite;
+}
+.box-info h4 {
+  font-family: "titre";
+}
+.box-info p {
+  font-family: "texte";
+  line-height: 24px;
+  font-size: 16px;
+}
+.petitinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+  height: 80vh;
+}
+.acteur {
+  margin-top: 20px;
+}
+li {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+/* iframe */
+.boxfilm {
+  width: 100%;
+  height: 80vh;
+}
+.iframe_du_film {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.iframe_du_film iframe {
+  border: 2px solid #ffd700;
+  box-shadow: 0px 0px 25px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}

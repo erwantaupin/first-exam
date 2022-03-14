@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "titre";
+  src: url("../font/AkiraExpanded.otf");
+}
+@font-face {
+  font-family: "texte";
+  src: url("../font/LEMONMILK-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* header */
+header {
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(182, 177, 172, 0.479);
+  backdrop-filter: blur(2px);
+  z-index: 7;
+}
+.box_button {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 50px 0px 50px;
+  align-items: center;
+}
+.signup a {
+  width: 130px;
+  font-family: "texte";
+  color: #ee171f;
+  font-size: 24px;
+  text-shadow: 1px 1px 0px #000000bb;
+  padding: 10px 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.signup a:hover {
+  color: #000000bb;
+}
+.signin a {
+  width: 130px;
+  font-family: "texte";
+  color: #ee171f;
+  font-size: 24px;
+  text-shadow: 1px 1px 0px #000000bb;
+  padding: 10px 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.signin a:hover {
+  color: #000000bb;
+}
+/* logo */
+.imagep {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/Spider4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "titre";
+  color: #fff;
+  text-shadow: 0px 10px 15px rgba(0, 0, 0, 1);
+}
+/* container1 */
+.container1 {
+  width: 100%;
+  height: 80vh;
+  background-color: #b81015;
+}
+.sstitre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-family: "titre";
+  color: antiquewhite;
+}
+.souscontainer1 {
+  width: 70%;
+  height: 75%;
+  margin: 0% 15% 0% 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.image1 {
+  display: flex;
+  justify-content: center;
+  left: 0;
+  width: 50vw;
+  height: 60vh;
+  background-image: url(../images/vod.jpg);
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.texte1 {
+  clear: both;
+  width: 50vw;
+  height: 60vh;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "texte";
+  line-height: 26px;
+  color: antiquewhite;
+}
+/* parralax */
+.paralax {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(255, 255, 255);
+}
+.paralax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+#spider {
+  width: 30%;
+  object-fit: none;
+}
+/* container2 */
+.container2 {
+  width: 100%;
+  height: 80vh;
+  background-color: #b81015;
+}
+.sstitre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-family: "titre";
+  color: antiquewhite;
+}
+.souscontainer2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.image2 {
+  display: flex;
+  justify-content: center;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url(../images/metro.jpg);
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.texte2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "texte";
+  justify-content: center;
+  line-height: 26px;
+  color: antiquewhite;
+}
+.texte2 p {
+  margin: 0 50px 0 50px;
+}
