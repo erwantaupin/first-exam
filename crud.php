@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(isset($_SESSION['sess_user_id'])){
+    require("assets/php/accesfilm.php");
+    require("assets/php/accesgenre.php");
+    require("assets/php/accesacteur.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,76 +16,28 @@
     <link rel="stylesheet" href="assets/css/includefooter.css">
     <!-- <link rel="stylesheet" href="assets/css/modal.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/aa36982253.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/newmodal.css">
     <link rel="stylesheet" href="assets/css/crud.css">
     <title>Moderateur</title>
 </head>
 <body>
-    <?php include("assets/include/header.php") ?>
+    <?php include("assets/include/header-crud.php") ?>
     <div class="box-crud">
         <div class="boxtitre-crud">
             <div class="titre-crud"><h2>C.R.U.D</h2></div>
         </div>
         <div class="box-modal-crud">
+            <!-- modal-film -->
             <button id="myBtn"><img id="film-crud myBtn" src="assets/images/svg/video.svg"></button>
             <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <form action="" method="post" class="crud-create">
-                        <div class="one">
-                            Titre du film   :<input type="texte" name="" id="" placeholder="nom du film">
-                        </div>
-                        <div class="two">
-                            Pegi du film    :<input type="texte" name="" id="" placeholder="Pegi du film">
-                        </div>
-                        <div class="three">
-                            Date du film    :<input type="texte" name="" id="" placeholder="Date du film">
-                        </div>
-                        <div class="four">
-                            Durée du film   :<input type="texte" name="" id="" placeholder="Durée du film">
-                        </div>
-                        <div class="five">
-                            Image du film   :<input type="texte" name="" id="" placeholder="image du film"><br>
-                        </div>
-                        <div class="six">
-                            Video du film   :<input type="texte" name="" id="" placeholder="video du film">
-                        </div>
-                        <div class="seven">
-                            Genre du film   :<select name="genre" id="genre">
-                                <option value="">--choisissez un genre--</option>
-                                <option value="1">--Action--</option>
-                                <option value="2">--Horreur--</option>
-                                <option value="3">--Comedie--</option>
-                                <option value="4">--Science-Fiction--</option>
-                                <option value="5">--Aventure--</option>
-                            </select>
-                        </div>
-                        <div class="heigh">
-                            Acteur du film  :<input type="texte" name="" id="" placeholder="acteur du film">
-                        </div>
-                        <div class="nine">
-                            Synopsis du film:<input type="texte" name="" id="" placeholder="synopsis du film">
-                        </div>
-                        <input type="submit" name="ajout" value="+" id="submit"/>
-                    </form>
-                     <div class="box-list-film">
-                         <div class="box-titre-list"><h2>Les Films</h2></div>
-                         <div class="list-film">
-                             <ul>
-                                 <li></li>
-                             </ul>
-                         </div>
-                     </div>
-                </div>
+                <?php include("assets/include/modal-film.php") ?>
             </div>
-
-
+            <!-- modal-user -->
             <button id="myBtn1"><img id="film-crud myBtn" src="assets/images/svg/user-plus.svg"></button>
             <div id="myModal1" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                        <p>Voici du texte2...</p>
-                        
-                </div>
+                <?php include("assets/include/modal-user.php") ?>
             </div>
             <!-- <div class="box-btn">
                  <a href="#modal1" class="js-modal">
@@ -94,3 +54,11 @@
     <script type="text/javascript" src="assets/js/newmodal.js"></script>
 </body>
 </html>
+
+<?php 
+        }
+    else{
+        header("Location: assets/php/signup.php");
+    }
+
+?>

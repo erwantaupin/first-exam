@@ -5,7 +5,7 @@
         <nav>    
             <ul class="barrep">
                 <li><a href="accueil.php"><h4>Accueil</h4></a></li>
-                <li><a href=""><h4>Favoris</h4></a></li>
+                <li><a href="crud.php"><h4>Favoris</h4></a></li>
                 <li><a href=""><h4>Genre</h4></a>
                    <li class="sous-menu"><img id="chevronbas" src="assets/images/svg/chevronbas.svg">
                             <ul class="ulssmenu">
