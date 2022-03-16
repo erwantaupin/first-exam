@@ -4,6 +4,8 @@
     require("assets/php/accesfilm.php");
     require("assets/php/accesgenre.php");
     require("assets/php/accesacteur.php");
+    require("assets/php/accesuser.php");
+    require("assets/php/accesrole.php");
 ?>
 
 <!DOCTYPE html>
@@ -48,8 +50,6 @@
             </div> -->
         </div>
     </div>
-    <?php include("assets/include/modal1.php") ?>
-    <?php include("assets/include/modal2.php") ?>
     <?php include("assets/include/footer.php") ?>
     <script type="text/javascript" src="assets/js/newmodal.js"></script>
 </body>
