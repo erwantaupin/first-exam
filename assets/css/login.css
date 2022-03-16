@@ -32,7 +32,7 @@ body {
 .logge {
   display: flex;
   width: 315px;
-  height: 440px;
+  height: 490px;
   align-items: center;
   justify-content: center;
   flex-direction: column;

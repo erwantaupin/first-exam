@@ -1,6 +1,8 @@
 <?php
     session_start();
     if(isset($_SESSION['sess_user_id'])){
+        if(isset($_SESSION['sess_id_role'])){
+            if($_SESSION['sess_id_role'] == "1"){
     require("assets/php/accesfilm.php");
     require("assets/php/accesgenre.php");
     require("assets/php/accesacteur.php");
@@ -57,6 +59,14 @@
 
 <?php 
         }
+    else{
+        session_destroy();
+        header("Location: assets/php/signup.php");
+    }
+    
+    }}
+
+
     else{
         header("Location: assets/php/signup.php");
     }

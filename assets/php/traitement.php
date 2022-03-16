@@ -3,7 +3,6 @@ session_start();
 include("db.php");
 ?>
 <?php
-$msg = ""; 
 if(isset($_POST['submitBtnLogin'])) {
   $username = trim($_POST['username']);
   $password = trim($_POST['password']);
@@ -26,13 +25,13 @@ if(isset($_POST['submitBtnLogin'])) {
         $_SESSION['sess_name'] = $row['nom_user'];
        header("Location: home.php");
       } else {
-        $msg = "Invalid username and password!";
+        header('Location: signup.php?erreur=2');
       }
     } catch (PDOException $e) {
       echo "Error : ".$e->getMessage();
     }
   } else {
-    $msg = "Both fields are required!";
+    header('Location: signup.php?erreur=1');
   }
 }
 ?>

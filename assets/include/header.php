@@ -1,6 +1,7 @@
 <header>
         <div class="box-logo">
             <div class="logo"></div>
+            <div class="echohello"><H4>Bonjour <?php echo($_SESSION['sess_user_name']);?></H4></div>
         </div>
         <nav>    
             <ul class="barrep">

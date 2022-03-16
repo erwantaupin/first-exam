@@ -1,9 +1,11 @@
 <?php
     session_start();
     if(isset($_SESSION['sess_user_id'])){
-        if(isset($_GET['id'])){
-                $id_user = $_GET['id'];
-            require("assets/php/db.php");
+        if(isset($_SESSION['sess_id_role'])){
+            if($_SESSION['sess_id_role'] == "1"){
+                if(isset($_GET['id'])){
+                    $id_user = $_GET['id'];
+                    require("assets/php/db.php");
 
             $sqlRequest = "SELECT * FROM users";
             $pdoStat = $db -> prepare($sqlRequest); 
@@ -67,4 +69,13 @@
 </body>
 </html>
 
-<?php }} ?>
+<?php       }}
+    else{
+        session_destroy();
+        header("Location: assets/php/signup.php");
+    }
+    }}
+    else{
+        header("Location: assets/php/signup.php");
+    }
+?>

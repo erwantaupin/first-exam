@@ -26,6 +26,11 @@ header {
   background-size: cover;
   /* margin-top: 280px; */
 }
+.echohello H4 {
+  margin-left: 20px;
+  color: #ee171f;
+  font-family: "texte";
+}
 nav {
   display: flex;
   flex-direction: row;
