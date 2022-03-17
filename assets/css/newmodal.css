@@ -1,6 +1,5 @@
 button {
   position: relative;
-  /* transform: translate(-50%, -50%); */
   height: 100px;
   width: 100px;
   background: none;
@@ -11,8 +10,6 @@ button {
 }
 #myBtn1 {
   margin-top: 50px;
-  /* width: 130px;
-  height: 130px; */
 }
 .modal {
   display: none;
@@ -53,15 +50,6 @@ button {
   display: flex;
   flex-direction: row;
 }
-/* .close {
-  color: #aaa;
-  position: relative;
-  float: right;
-  cursor: pointer;
-  font-size: 50px;
-  padding: 0 10px 0 0;
-  font-weight: bold;
-} */
 .one {
   margin-left: 10px;
 }

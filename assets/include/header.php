@@ -1,11 +1,17 @@
 <header>
         <div class="box-logo">
             <div class="logo"></div>
+            <div class="echohello"><H4>Bonjour <?php echo($_SESSION['sess_user_name']);?></H4></div>
         </div>
         <nav>    
             <ul class="barrep">
                 <li><a href="accueil.php"><h4>Accueil</h4></a></li>
-                <li><a href="crud.php"><h4>Favoris</h4></a></li>
+                <?php if(isset($_SESSION['sess_id_role'])){ 
+                    if($_SESSION['sess_id_role'] == "1"){
+                ?>
+                <li><a href="crud.php"><h4>Crud</h4></a></li>
+                <?php }} ?>
+                <li><a href=""><h4>Favoris</h4></a></li>
                 <li><a href=""><h4>Genre</h4></a>
                    <li class="sous-menu"><img id="chevronbas" src="assets/images/svg/chevronbas.svg">
                             <ul class="ulssmenu">

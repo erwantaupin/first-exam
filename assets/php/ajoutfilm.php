@@ -34,14 +34,19 @@
     
 
     // insert dans table film
-    $sqlRequest = "INSERT INTO film WHERE `id_film`=:NULL and `titre_film`=:titre_film and sy
-                        VALUES (NULL,?,?,?,?,?,?,?);";
+    $sqlRequest = "INSERT INTO film (titre_film, synopsis_film, pegi_film, date_film, duree_film, image_film, video_film)
+                        VALUES (:titre_film, :synopsis_film, :pegi_film, :date_film, :duree_film, :image_film, :video_film);";
     $pdoStat = $db -> prepare($sqlRequest);
-    $pdoStat->execute(array(null, $titre_film, $synopsis_film, $pegi_film, $date_film, $duree_film, $image_film, $video_film));
+    $pdoStat->execute(Array(
+        ':titre_film' => $titre_film,
+        ':synopsis_film' => $synopsis_film,
+        ':pegi_film' => $pegi_film,
+        ':date_film' => $date_film,
+        ':duree_film' => $duree_film,
+        ':image_film' => $image_film,
+        ':video_film' => $video_film,
+    ));
     
-    var_dump($pdoStat);
-    die();
-
     // insert dans table caracterise (genre)
     $sqlRequest  = "SELECT id_film FROM film ORDER BY id_film DESC LIMIT 1";
     $pdoStat = $db -> prepare($sqlRequest); 
@@ -51,26 +56,23 @@
 
 
     $sqlRequest = "INSERT INTO caracterise (id_genre, id_film)
-                        VALUES (? , ?);";
+                        VALUES (:id_genre, :id_film);";
     $pdoStat = $db -> prepare($sqlRequest); 
-    $pdoStat->execute([$id_genre, $id_last_film["id_film"]]);
-
-
-    // insert dans table jouer (acteur)
-    // $sqlRequest  = "SELECT id_film FROM film ORDER BY id_film DESC LIMIT 1";
-    // $pdoStat = $db -> prepare($sqlRequest); 
-    // $pdoStat->execute();
-
-    // $id_last_film = $pdoStat->fetch(PDO::FETCH_ASSOC);
-
+    $pdoStat->execute(Array(
+        ':id_genre' => $id_genre,
+        ':id_film' => $id_last_film["id_film"]
+));
 
     $sqlRequest = "INSERT INTO jouer (id_acteur, id_film)
-                        VALUES (? , ?);";
+                        VALUES (:id_acteur, :id_film);";
     $pdoStat = $db -> prepare($sqlRequest); 
-    $pdoStat->execute([$id_acteur, $id_last_film["id_film"]]);
+    $pdoStat->execute(Array(
+        ':id_acteur' => $id_acteur,
+        ':id_film' => $id_last_film["id_film"]
+    ));
 
 
-    // header("Location: ../../crud.php");
+    header("Location: ../../crud.php");
 
 
 

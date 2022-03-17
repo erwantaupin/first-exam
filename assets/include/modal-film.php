@@ -87,8 +87,8 @@
                                         <div class="echo-film"><?php echo $value["synopsis_film"]?></div>
                                     </div>
                                     <div class="btn-cfilm">
-                                        <a href="" ><img class="btnedite" src="assets/images/svg/pencil.svg"></a>
-                                        <a href="" ><img class="btnremove" src="assets/images/svg/trash.svg"></a>
+                                        <a href="crud-modfilm.php?id=<?php echo $value["id_film"]?>" ><img class="btnedite" src="assets/images/svg/pencil.svg"></a>
+                                        <a href="assets/php/suppfilm.php?id=<?php echo $value["id_film"]?>" ><img class="btnremove" src="assets/images/svg/trash.svg"></a>
                                     </div>
                                  </li>
                              </ul>
