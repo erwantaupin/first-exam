@@ -29,7 +29,9 @@
             <div class="sliders offback">
                 <div class="sous-titre"><h3>Mes Films</h3></div>
                 <div class="slide responsive fv norad">                   
-                            <?php foreach ($filmfavoris as $value){ ?>    
+                            <?php foreach ($filmfavoris as $value){ 
+                                if($value['id_user'] == $_SESSION['sess_user_id'] ){
+                            ?>    
                             <div class="body-slide" id="<?php echo $value["id_film"] ?>">
                             <div class="card" style=" background: url(<?php echo $value['image_film']?>)">
                                 <a href="pagefilm.php?id=<?php echo $value["id_film"]?>" class="js-modal">                           
@@ -48,7 +50,7 @@
                             </div>
                             </div>
                         
-                        <?php } ?>
+                        <?php }} ?>
                 </div>
                 </div>
             </div>
