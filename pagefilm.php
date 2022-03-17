@@ -3,6 +3,7 @@
     if(isset($_SESSION['sess_user_id'])){
             if(isset($_GET['id'])){
                 require("assets/php/accesfilm.php");
+                require("assets/php/db.php");
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +25,32 @@ include("assets/include/header.php");
 ?>
     <div class="imgfilm"><img id="img_film" src="<?php echo $value['image_film']?>" alt=""><h2 id="titre_film"><?php echo $value["titre_film"]?></h2></div>
     <div class="box-info">
-        <div class="resume" id="resume"><div class="minititre"><h4>Synopsis</h4></div><p><?php echo $value["synopsis_film"]?></p></div>
+        <div class="resume" id="resume"><div class="minititre"><h4>Synopsis</h4></div><p><?php echo $value["synopsis_film"]?></p>
+        <H3 class="favoris">Favoris :</H3>
+            <?php 
+                $query = "SELECT * FROM `favoris` WHERE `id_user`=:id_user AND `id_film`=:id_film";
+                $stmt = $db->prepare($query);
+                $stmt->execute(ARRAY(
+                    ':id_user' => $_SESSION['sess_user_id'],
+                    ':id_film' => $_GET['id']
+                ));
+                $result = $stmt->fetch();
+                if ($result != NULL) {
+
+            ?>
+            <a href="assets/php/traitement-fav.php?id=<?php echo $_GET['id']?>&action=2"><img class="favico" src="assets/images/svg/heart-plus.svg"></a>
+            <?php
+
+                } 
+                else{
+            ?>
+            <a href="assets/php/traitement-fav.php?id=<?php echo $_GET['id']?>&action=1"><img class="favico" src="assets/images/svg/heart-moins.svg"></a>
+            <?php
+
+                } 
+
+            ?>
+        </div>
         <div class="petitinfo">
             <div class="info" id="info"><div class="minititre"><h4>Info</h4>
                 <ul>

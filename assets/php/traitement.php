@@ -6,7 +6,6 @@ include("db.php");
 if(isset($_POST['submitBtnLogin'])) {
   $username = trim($_POST['username']);
   $password = trim($_POST['password']);
-  // $role = trim($_POST['id_role']);
   if($username != "" && $password != "") {
     try {
       $query = "SELECT * FROM `users` WHERE `nom_user`=:username AND `password_user`=:password";

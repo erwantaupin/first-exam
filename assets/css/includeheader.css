@@ -24,7 +24,6 @@ header {
   height: 70px;
   background-image: url("../images/lemsf.png");
   background-size: cover;
-  /* margin-top: 280px; */
 }
 .echohello H4 {
   margin-left: 20px;
@@ -34,7 +33,6 @@ header {
 nav {
   display: flex;
   flex-direction: row;
-  /* margin-left: 35%; */
 }
 .barrep {
   position: relative;
@@ -75,7 +73,7 @@ nav {
     rgba(182, 177, 172, 0.479) 69%,
     transparent 31%
   );
-  /* backdrop-filter: blur(4px); */
+
   border-radius: 0px 0px 15px 15px;
   z-index: 200;
 }

@@ -18,7 +18,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/includeheader.css">
     <link rel="stylesheet" href="assets/css/includefooter.css">
-    <!-- <link rel="stylesheet" href="assets/css/modal.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/aa36982253.js" crossorigin="anonymous"></script>
@@ -43,13 +42,6 @@
             <div id="myModal1" class="modal">
                 <?php include("assets/include/modal-user.php") ?>
             </div>
-            <!-- <div class="box-btn">
-                 <a href="#modal1" class="js-modal">
-                     <div class="btnleft">
-                         <img id="film-crud" src="assets/images/svg/video.svg">
-                        </div></a>
-                <div class="btnright"><img id="user-crud"src="assets/images/svg/user-plus.svg"><br><a href="#modal2" class="js-modal">Utilisateur</a></div>
-            </div> -->
         </div>
     </div>
     <?php include("assets/include/footer.php") ?>

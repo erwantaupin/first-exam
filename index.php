@@ -35,7 +35,6 @@
     </div>
     <div class="paralax">
         <img src="assets/images/newyork.jpg" id="bg">
-        <!-- <img src="assets/images/doctorstrange.png" id="strange"> -->
         <img src="assets/images/spiderpara.png" id="spider">
     </div>
     <div class="container2">

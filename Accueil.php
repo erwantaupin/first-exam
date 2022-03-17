@@ -2,6 +2,9 @@
     session_start();
     if(isset($_SESSION['sess_user_id'])){
     require("assets/php/accesfilm.php");
+    require("assets/php/accesfav.php");
+
+    
 ?>
 
 <!DOCTYPE html>
@@ -22,36 +25,39 @@
     <body>
         <?php   include("assets/include/header.php"); ?>
         <div class="box-carrousel">
-            
-            <!-- <div class="carrousel">
-                <div id="carousel">
-                    <div class="hideLeft">
-                        <img id="chobbit" src="assets/images/le_hobbit.jpg"><a href="" class="js-modal">The Hobbit</a>
-                    </div>
-                    <div class="prevLeftSecond">
-                        <img id="cevade" src="assets/images/les_évadé.jpg"><a href="" class="js-modal">Les Evadés</a></div>
-                    <div class="prev">
-                        <img id="worldend" src="assets/images/dernierpub.jpg"><a href="" class="js-modal">Last Pub</a></div>
-                    <div class="selected">
-                        <img id="spiderman3" src="assets/images/spider-manle3.jpg"><a href="" class="js-modal">Spiderman 3</a></div>
-                    <div class="next">
-                        <img id="batman" src="assets/images/batman.jpg"><a href="" class="js-modal">Batman</a></div>
-                    <div class="nextRightSecond">
-                        <img id="theconjuring" src="assets/images/the_conjuring.jpg"><a href="" class="js-modal">The Conjuring</a></div>
-                    <div class="hideRight">
-                        <img id="fury" src="assets/images/fury.jpg"><a href="" class="js-modal">Fury</a></div>
+        <div class="fav-film">
+            <div class="sliders offback">
+                <div class="sous-titre"><h3>Mes Films</h3></div>
+                <div class="slide responsive fv norad">                   
+                            <?php foreach ($filmfavoris as $value){ ?>    
+                            <div class="body-slide" id="<?php echo $value["id_film"] ?>">
+                            <div class="card" style=" background: url(<?php echo $value['image_film']?>)">
+                                <a href="pagefilm.php?id=<?php echo $value["id_film"]?>" class="js-modal">                           
+                                    <div class="textcache" id="info">
+                                        <div class="minititre">
+                                            <h4>Info</h4>
+                                            <ul>
+                                                <li><p><?php echo $value["pegi_film"] ?></p></li>
+                                                <li><p><?php echo $value["date_film"] ?></p></li>
+                                                <li><p><?php echo $value["duree_film"] ?></p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <?php echo $value["titre_film"]?>
+                                </a>
+                            </div>
+                            </div>
+                        
+                        <?php } ?>
                 </div>
-                <div class="buttons">
-                    <button id="prev">Precedent</button>
-                    <button id="next">Suivant</button>
                 </div>
-            </div> -->
+            </div>
         </div>
         <div class="box-nos-films">
             <div class="titre"><h2>Nos Films</h2></div>
-            <div class="sliders">
+            <div class="sliders onback">
                 <div class="sous-titre"><h3>Action</h3></div>
-                <div class="slide responsive">
+                <div class="slide responsive onrad">
                     <?php foreach ($execute as $value){ ?>
                         <?php if ($value["id_genre"] == 1){ ?>
                     <div class="body-slide" id="<?php echo $value["id_film"] ?>">
@@ -78,7 +84,7 @@
             </div>
             <div class="sliders">
                 <div class="sous-titre"><h3>Horreur</h3></div>
-                <div class="slide responsive">
+                <div class="slide responsive onrad">
                 <?php foreach ($execute as $value){ ?>
                         <?php if ($value["id_genre"] == 2){ ?>
                             <div class="body-slide" id="<?php echo $value["id_film"] ?>">
